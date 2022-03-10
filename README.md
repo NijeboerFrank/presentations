@@ -1,66 +1,30 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# Pug + RevealJS Presentations
+This is a Fork of the RevealJS presentation framework. 
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).
+## Installing dependencies
+First, you need to install the dependencies for this project:
+```
+npm install
+```
 
-The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and an [extensive API](https://revealjs.com/api/).
+## Workflow
+In this fork I make presentations in different branches by using the pug templating language. To make a new presentation I create a new branch from my template branch. 
+Then I create new files in the `sections` directory to create my presentation.
 
----
+To build the presentation and view it in the browser run:
+```
+npm start -- --port 4000
+```
 
-### Sponsors
-Hakim's open source work is supported by <a href="https://github.com/sponsors/hakimel">GitHub sponsors</a>. Special thanks to:
-<div align="center">
-  <table>
-    <td align="center">
-      <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
-        <div>
-          <img src="https://user-images.githubusercontent.com/629429/151508669-efb4c3b3-8fe3-45eb-8e47-e9510b5f0af1.svg" width="290" alt="WorkOS">
-        </div>
-        <b>Your app, enterprise-ready.</b>
-        <div>
-          <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
-        </div>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.doppler.com/?utm_cam![Uploading workos-logo-white-bg.svg…]()
-      paign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
-        <div>
-          <img src="https://user-images.githubusercontent.com/629429/151510865-9fd454f1-fd8c-4df4-b227-a54b87313db4.png" width="290" alt="Doppler">
-        </div>
-        <b>All your environment variables, in one place</b>
-        <div>
-          <sub>Stop struggling with scattered API keys, hacking together home-brewed tools, and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
-        </div>
-      </a>
-    </td>
-  </table>
-</div>
+The presentation will be available on `localhost:4000` in your browser.
 
----
+To build the pug files you should have the `pug-cli` tool installed. Now you can run:
+```
+pug -w index.pug
+```
+This will watch the pug files for a change and build a new index.html file when a change occurs. Use it without the `-w` flag to only build the file once.
 
-### Getting started
-- 🚀 [Install reveal.js](https://revealjs.com/installation)
-- 👀 [View the demo presentation](https://revealjs.com/demo)
-- 📖 [Read the documentation](https://revealjs.com/markup/)
-- 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
-- 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
+## Using iFrames
+By default, your browser will block certain websites that have the x-frame-options header set to SAMEORIGIN. That will now allow the browser to display the site in an iFrame. 
+I use a dedicated Google Chrome instance that disables the blocking https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe.
 
----
-
-### Online Editor
-Want to create your presentation using a visual editor? Try the official reveal.js presentation platform for free at [Slides.com](https://slides.com). It's made by the same people behind reveal.js.
-
-<br>
-<br>
-
---- 
-<div align="center">
-  MIT licensed | Copyright © 2011-2022 Hakim El Hattab, https://hakim.se
-</div>
