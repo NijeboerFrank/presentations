@@ -5,7 +5,7 @@ head
   title reveal.js
   link(rel='stylesheet' href='dist/reset.css')
   link(rel='stylesheet' href='dist/reveal.css')
-  link(rel='stylesheet' href='dist/theme/black.css')
+  link(rel='stylesheet' href='dist/theme/university.css')
   // Theme used for syntax highlighted code
   link(rel='stylesheet' href='plugin/highlight/monokai.css')
 .reveal
@@ -21,6 +21,9 @@ script.
   // - https://revealjs.com/config/
   Reveal.initialize({
   hash: true,
+  transition: 'fade',
+  progress: false,
+  preloadIframes: true,
   // Learn about plugins: https://revealjs.com/plugins/
   plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
   });
