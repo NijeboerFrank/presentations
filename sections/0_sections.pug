@@ -7,14 +7,67 @@ include ../templates/iframe-background.pug
 include mixins.pug
 
 section
-  include 1_introduction.pug
+  section
+    h2 Aventine Communication Strategy
+    p(style="color: gray;") Platypus Cyber Security
+
 section
-  include 2_Tezos.pug
+  +animate
+    +gradientH2 Timeline
+
+  +animate
+    h2 Timeline
+    .fragment Initial signals of a breach
+    .fragment Factories and distribution centers EU hit
+    .fragment Spread to the US network
+    .fragment Situation turned into full company crisis
+    .fragment Questions are being asked
+
 section
-  include 3_Presto.pug
-section 
-  include 4_Presto_Plugins.pug
-section 
-  include 5_Planning.pug
-section 
-  include thanks.pug
+  +animate
+    +gradientH3 Crisis Communication Strategy
+
+  +animate
+    h3 Crisis Communication Strategy
+    .fragment
+      p Values
+      p General
+      p Target groups
+      p Communication Channels
+      p Measuring the effect
+
+section
+  section
+    +gradientH3 Values
+    p Reliable
+    p Expert
+    p Long term sustainability
+  section
+    +gradientH3 General Message
+    p Explain the problem
+    p What does it mean?
+  section
+    +gradientH3 Target Groups
+    p Employees
+    p Stakeholders
+      p(style="font-size: 30px; color: gray") Clients
+      p(style="font-size: 30px; color: gray") Suppliers
+    p Media
+
+  section
+    +gradientH3 Communication Channels
+    del Company E-Mail
+    p Phone (SMS & Call)
+    p Company website
+    p Twitter
+    p Facebook
+
+  section
+    +gradientH3 Measuring the Effect
+    p Feedback from the managers
+    p Twitter mentions (Hashtags)
+    p Support will receive calls and will be instructed
+
+section
+  section
+    +gradientH3 Your Thoughts and Worries
