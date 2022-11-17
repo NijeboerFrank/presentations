@@ -2,7 +2,7 @@ mixin SelectedSpan(text)
   span(style="background-color: black;color: white;")= text
 
 mixin animate 
-  section(data-auto-animate='')
+  section(data-auto-animate='', data-auto-animate-unmatched='fade', data-transition='fade')
     block
 
 mixin gradientH1
@@ -10,7 +10,7 @@ mixin gradientH1
     block
 
 mixin gradientH2 
-  h2(style="background: linear-gradient(to right, #2C7DF7 0%, #5B87DA 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;")
+  h2(data-id="name", style="background: linear-gradient(to right, #2C7DF7 0%, #5B87DA 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;")
     block
 
 mixin gradientSpan
