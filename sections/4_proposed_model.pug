@@ -1,4 +1,60 @@
 section
+  h1 Proposed Model
+  
+section
+  +gradientH1 Entities
+ 
++animate
+  +gradientH2 Global Authority
+  h2 Local Authority
+  h2 Client
+  h2 Database
+  
++animate
+  +gradientH2 Global Authority
+  .fragment Generate global parameters
+  .fragment That's it :)
+    
++animate
+  h2 Global Authority
+  +gradientH2 Local Authority
+  h2 Client
+  h2 Database
++animate
+  +gradientH2 Local Authority
+  .fragment Creates keys for the clients
+  .fragment Decides what attributes the clients have
+    
++animate
+  h2 Global Authority
+  h2 Local Authority
+  +gradientH2 Client
+  h2 Database
+  
++animate
+  +gradientH2 Client
+  .fragment Can be any party in the system
+  .fragment Has its own UUID
+  .fragment Can grant write access to the database for its own PHR
+    
++animate
+  h2 Global Authority
+  h2 Local Authority
+  h2 Client
+  +gradientH2 Database
+  
++animate
+  +gradientH2 Database
+  .fragment Contains encrypted data
+  .fragment Enforces write access
+  
+section
+  +gradientH2 Encryption
+  .fragment Hybrid Approach
+  .fragment Message -> Symmetric Encryption
+  .fragment Symmetric Key -> Previously mentioned ABE Scheme
+    
+section
   img(src="assets/Reading.png", alt="")
 section
   img(src="assets/Attribution.png", alt="") 
