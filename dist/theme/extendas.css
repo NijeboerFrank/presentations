@@ -370,8 +370,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-repeat: no-repeat;
 }
 
-.title-state h2 {
-  font-size: 30px;
-  font-weight: normal;
+.author {
+  font-size: 30px !important;
+  font-weight: normal !important;
   font-style: italic;
 }

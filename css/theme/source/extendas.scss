@@ -33,7 +33,6 @@ $selectionBackgroundColor: rgba(61, 61, 61, 0.99);
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
 
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
@@ -52,8 +51,8 @@ $selectionBackgroundColor: rgba(61, 61, 61, 0.99);
     background-repeat: no-repeat;
 }
 
-.title-state h2 {
-    font-size: 30px;
-    font-weight: normal;
+.author {
+    font-size: 30px !important;
+    font-weight: normal !important;
     font-style: italic;
 }
