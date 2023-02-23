@@ -1690,13 +1690,14 @@ export default function( revealElement, options ) {
 				});
 			}
 
-			if ( slide.getAttribute("id") == "sec-title-slide" ) {
-				let logos = document.getElementsByClassName("logo");
-				for( let i = 0; i < logos.length; i++) {
-					let logo = logos[i];
-					logo.style.visibility = 'hidden';
-				}
-			} else if ( slide.hasAttribute("data-background-iframe") ) {
+			// if ( slide.getAttribute("id") == "sec-title-slide" ) {
+			// 	let logos = document.getElementsByClassName("logo");
+			// 	for( let i = 0; i < logos.length; i++) {
+			// 		let logo = logos[i];
+			// 		logo.style.visibility = 'hidden';
+			// 	}
+			// } else
+			if ( slide.hasAttribute("data-background-iframe") ) {
 				let logos = document.getElementsByClassName("logo");
 				for( let i = 0; i < logos.length; i++) {
 					let logo = logos[i];
