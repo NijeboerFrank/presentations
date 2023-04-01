@@ -51,6 +51,13 @@ $selectionBackgroundColor: rgba(61, 61, 61, 0.99);
     background-repeat: no-repeat;
 }
 
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+
 .author {
     font-size: 30px !important;
     font-weight: normal !important;
