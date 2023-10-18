@@ -16,27 +16,14 @@
 
 ---
 
-<!-- .slide: data-auto-animate -->
+# Attestation
 
-# Next slide
+vvv
 
----
-
-<!-- .slide: data-auto-animate -->
-
-# Next slide
-aositenaroisetnaorst
+## Test
 
 ---
 
-<!-- .slide: data-background-iframe="https://slides.com" data-background-interactive -->
-
 ---
 
-### Slide with Code
-
-```rust
-fn main() {
-	let test = 1;
-}
-```
+---
