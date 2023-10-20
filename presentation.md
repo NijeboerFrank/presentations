@@ -1,18 +1,29 @@
 <!-- .slide: data-auto-animate data-auto-animate-id="opening" -->
 
-## A <span data-id="p">P</span>rotocol for <span data-id="at">AT</span>testion in <span data-id="a">A</span>rm <span data-id="t">T</span>rustzone
+#### <span data-id="protocol">A </span><span data-id="p">P</span><span data-id="protocol">rotocol for </span><span data-id="at">AT</span><span data-id="protocol">testation in </span><span data-id="a">A</span><span data-id="protocol">rm </span><span data-id="t">T</span><span data-id="protocol">rustZone</span>
+
+<!-- --- -->
+
+<!-- <\!-- .slide: data-auto-animate data-auto-animate-id="opening" -\-> -->
+
+<!-- <span data-id="protocol">A </span> -->
+<!-- <span data-id="p" style="display-inline-block; color: #224099; font-size: 120px;">P</span> -->
+<!-- <span data-id="protocol">rotocol for </span> -->
+<!-- <span data-id="at" style="display-inline-block; color: #224099; font-size: 120px;">AT</span> -->
+<!-- <span data-id="protocol">testation in </span> -->
+<!-- <span data-id="a" style="display-inline-block; color: #224099; font-size: 120px;">A</span> -->
+<!-- <span data-id="protocol">rm </span> -->
+<!-- <span data-id="t" style="display-inline-block; color: #224099; font-size: 120px;">T</span> -->
+<!-- <span data-id="protocol">ustZone</span> -->
+
+
+<!-- testion in rm 
 
 ---
 
-<!-- .slide: data-auto-animate data-auto-animate-id="opening" -->
+<!-- .slide: data-auto-animate data-auto-animate-id="opening" data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)" data-auto-animate-duration="1.5" -->
 
-## A <span data-id="p" style="color: #224099;">P</span>rotocol for <span data-id="at" style="color: #224099;">AT</span>testion in <span data-id="a" style="color: #224099;">A</span>rm <span data-id="t" style="color: #224099;">T</span>rustzone
-
----
-
-<!-- .slide: data-auto-animate data-auto-animate-id="opening" -->
-
-# <span data-id="p" style="color: #224099;">P</span> <span data-id="at" style="color: #224099;">AT</span> <span data-id="a" style="color: #224099;">A</span> <span data-id="t" style="color: #224099;">T</span>
+#### <span data-id="protocol" data-auto-animate-delay="0.4" style="display-inline-block; font-size: 0px">A </span><span data-id="p" data-auto-animate-delay="0.4" style="display-inline-block; color: #224099; font-size: 120px;">P</span><span data-id="protocol" data-auto-animate-delay="0.3" style="display-inline-block; font-size: 0px">rotocol for </span><span data-id="at" data-auto-animate-delay="0.3" style="display-inline-block; color: #224099; font-size: 120px;">AT</span><span data-id="protocol" data-auto-animate-delay="0.2" style="display-inline-block; font-size: 0px">testation in </span><span data-id="a" data-auto-animate-delay="0.2" style="display-inline-block; color: #224099; font-size: 120px;">A</span><span data-id="protocol" data-auto-animate-delay="0.1" style="display-inline-block; font-size: 0px">rm </span><span data-id="t" data-auto-animate-delay="0.1" style="display-inline-block; color: #224099; font-size: 120px;">T</span><span data-id="protocol" data-auto-animate-delay="0" style="display-inline-block; font-size: 0px">rustZone</span>
 
 ---
 
