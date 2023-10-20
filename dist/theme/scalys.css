@@ -33,7 +33,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading3-size: 1.55em;
   --r-heading4-size: 1em;
   --r-code-font: JetBrains Mono;
-  --r-link-color: #DD4814;
+  --r-link-color: #224099;
   --r-link-color-dark: #97310e;
   --r-link-color-hover: #f18a66;
   --r-selection-background-color: rgba(61, 61, 61, 0.99);
@@ -88,6 +88,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   text-transform: var(--r-heading-text-transform);
   text-shadow: var(--r-heading-text-shadow);
   word-wrap: break-word;
+  color: #224099;
 }
 
 .reveal h1 {
