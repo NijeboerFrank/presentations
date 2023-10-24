@@ -31,7 +31,14 @@
     <script>
      // More info about initialization & config:
      // - https://revealjs.com/initialization/
-     // - https://revealjs.com/config/
+      // - https://revealjs.com/config/
+      
+      Reveal.configure({
+	  keyboard: {
+	      38: 'prev',
+	      40: 'next'	      
+	  }
+      });
      Reveal.initialize({
 	 hash: true,
 	 transition: 'slide',
@@ -41,6 +48,7 @@
 	 // Learn about plugins: https://revealjs.com/plugins/
 	 plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
      });
+
     </script>
 
     <style type="text/css">
