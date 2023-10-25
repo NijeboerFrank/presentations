@@ -59,18 +59,6 @@ vvv
 Note:
 And I don't say that just because I chose the security master
 
-vvv
-
-<!-- .slide: data-background-iframe="https://www.cybertalk.org/2023/01/19/top-10-cyber-security-threats-in-2023/" data-background-interactive -->
-
-vvv
-
-<!-- .slide: data-background-iframe="https://techhq.com/2021/08/heres-how-hackers-exploit-iot-device-vulnerabilities-to-invade-hardware/" -->
-
-vvv
-
-<!-- .slide: data-background-iframe="https://www.helpnetsecurity.com/2023/10/16/iot-security-strategy/" -->
-
 ---
 
 <!-- .slide: data-auto-animate -->
