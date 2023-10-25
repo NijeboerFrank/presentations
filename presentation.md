@@ -22,6 +22,38 @@ vvv
 
 ---
 
+<!-- .slide: data-auto-animate data-auto-animate-id="" -->
+
+## How do you make PATAT?
+
+<img class="r-stretch" src="./dist/img/max-patat.png" />
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-id="" -->
+
+<img class="r-stretch" src="./dist/img/max-patat.png" />
+
+1. Cut potatoes <!-- .element: class="fragment fade-in"-->
+2. Fry them <!-- .element: class="fragment fade-in"-->
+3. Serve them <!-- .element: class="fragment fade-in"-->
+
+---
+
+
+## Cutting Potatoes
+<img class="r-stretch" src="https://fromscratchfast.com/wp-content/uploads/2020/06/Baked-French-Fries-Recipe-2.jpg" />
+
+## ⬇️
+
+## Compartmentalization
+
+vvv
+
+##
+
+<!-- .slide: data-background-iframe="" -->
+
 ## Security is a hot topic
 
 Note:
@@ -29,7 +61,7 @@ And I don't say that just because I chose the security master
 
 vvv
 
-<!-- .slide: data-background-iframe="https://www.cybertalk.org/2023/01/19/top-10-cyber-security-threats-in-2023/" -->
+<!-- .slide: data-background-iframe="https://www.cybertalk.org/2023/01/19/top-10-cyber-security-threats-in-2023/" data-background-interactive -->
 
 vvv
 
@@ -39,17 +71,29 @@ vvv
 
 <!-- .slide: data-background-iframe="https://www.helpnetsecurity.com/2023/10/16/iot-security-strategy/" -->
 
+---
+
+<!-- .slide: data-auto-animate -->
+
+## Compartmentalization
+
+Note:
+Just splitting up is not enough. We need something more
+
+vvv
+
+
+<!-- .slide: data-auto-animate -->
+
+## Compartmentalization
+
+#### <span data-id="towards">Can we improve </span><span data-id="hardware-based" style="font-size: 0;">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark">?</span>
+
 vvv
 
 <!-- .slide: data-auto-animate -->
 
-## <span data-id="towards">Can we improve </span><span data-id="hardware-based" style="font-size: 0;">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark">?</span>
-
-vvv
-
-<!-- .slide: data-auto-animate -->
-
-## <span data-id="towards" style="font-size: 0;">Can we improve </span><span data-id="hardware-based">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark" style="font-size: 0;">?</span>
+#### <span data-id="towards" style="font-size: 0;">Can we improve </span><span data-id="hardware-based">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark" style="font-size: 0;">?</span>
 
 vvv
 
@@ -118,7 +162,7 @@ vvv
 <span data-id="e">E</span><span data-id="tee">xecution</span>
 <span data-id="e2">E</span><span data-id="tee">nvironments</span>
 
-Note: 
+Note:
 Trusted Execution Environments
 
 vvv

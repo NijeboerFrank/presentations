@@ -1,96 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+        <title>reveal.js</title>
 
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/scalys.css">
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/scalys.css">
 
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-	<section data-markdown="presentation.md"
-		 data-separator-vertical="vvv\n">
-	</section>
-      </div>
-    </div>
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+	              <section data-markdown="presentation.md"
+		                     data-separator-vertical="vvv\n">
+	              </section>
+            </div>
+        </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/math/math.js"></script>
-    <script>
-     // More info about initialization & config:
-     // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      
-      Reveal.configure({
-	  keyboard: {
-	      38: 'prev',
-	      40: 'next'	      
-	  }
-      });
-     Reveal.initialize({
-	 hash: true,
-	 transition: 'slide',
-	 theme: 'extendas',
-	 preloadIframes: true,
-	 progress: true,
-	 // Learn about plugins: https://revealjs.com/plugins/
-	 plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
-     });
-
-    </script>
-
-    <style type="text/css">
-     /* 1. Style header/footer <div> so they are positioned as desired. */
-     #header-left {
-         position: absolute;
-         top: 0%;
-         left: 0%;
-     }
-     #header-right {
-         position: absolute;
-         top: 0%;
-         right: 0%;
-     }
-     #footer-left {
-         position: absolute;
-         bottom: 0%;
-         left: 0%;
-     }
-    </style>
-
-    <!-- 2. Create hidden header/footer <div> -->
-    <div id="hidden" style="display:none;">
-	<div id="header">
-            <!-- <div id="header-left">HEADER-LEFT</div> -->
-            <!-- <div id="header-right">HEADER-RIGHT</div> -->
-            <div id="footer-left"><img src="https://scalys.com/wp-content/themes/scalys2/images/dist/logo.svg"/></div>
-	</div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript">
-     // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-     var header = $('#header').html();
-     if ( window.location.search.match( /print-pdf/gi ) ) {
-         Reveal.addEventListener( 'ready', function( event ) {
-             $('.slide-background').append(header);
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/zoom/zoom.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script>
+         // More info about initialization & config:
+         // - https://revealjs.com/initialization/
+         // - https://revealjs.com/config/
+         Reveal.configure({
+	           keyboard: {
+	               38: 'prev',
+	               40: 'next'
+	           }
          });
-     }
-     else {
-         $('div.reveal').append(header);
-     }
-    </script>
-  </body>
+         Reveal.initialize({
+	           hash: true,
+	           transition: 'slide',
+	           theme: 'extendas',
+	           preloadIframes: true,
+	           progress: true,
+	           // Learn about plugins: https://revealjs.com/plugins/
+	           plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+         });
+
+        </script>
+
+        <style type="text/css">
+         /* 1. Style header/footer <div> so they are positioned as desired. */
+         #header-left {
+             position: absolute;
+             top: 0%;
+             left: 0%;
+         }
+         #header-right {
+             position: absolute;
+             top: 0%;
+             right: 0%;
+         }
+         #footer-left {
+             position: absolute;
+             bottom: 0%;
+             left: 0%;
+         }
+        </style>
+
+        <!-- 2. Create hidden header/footer <div> -->
+        <div id="hidden" style="display:none;">
+	          <div id="header">
+                <!-- <div id="header-left">HEADER-LEFT</div> -->
+                <!-- <div id="header-right">HEADER-RIGHT</div> -->
+                <div id="footer-left"><img src="https://scalys.com/wp-content/themes/scalys2/images/dist/logo.svg"/></div>
+	          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript">
+         // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+         var header = $('#header').html();
+         if ( window.location.search.match( /print-pdf/gi ) ) {
+             Reveal.addEventListener( 'ready', function( event ) {
+                 $('.slide-background').append(header);
+             });
+         }
+         else {
+             $('div.reveal').append(header);
+         }
+        </script>
+    </body>
 </html>
