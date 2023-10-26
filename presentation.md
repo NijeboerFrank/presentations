@@ -108,11 +108,11 @@ vvv
 
 ## TrustZone
 
-Old Technology <!-- .element: class="fragment fade-in"-->
+Old Technology 👴🏼 <!-- .element: class="fragment fade-in"-->
 
-Normal World <!-- .element: class="fragment fade-in"-->
+Normal World 🖥️  <!-- .element: class="fragment fade-in"-->
 
-Secure World <!-- .element: class="fragment fade-in"-->
+Secure World 🔒 <!-- .element: class="fragment fade-in"-->
 
 vvv
 
@@ -134,7 +134,7 @@ vvv
 
 <span data-id="t" data-auto-animate-delay="0" style="display-inline-block; color: #224099; font-size: 120px;">T</span><span data-id="tee" data-auto-animate-delay="0.1" style="display-inline-block; font-size: 0px">rusted</span>
 <span data-id="e" data-auto-animate-delay="0.1" style="display-inline-block; color: #224099; font-size: 120px;">E</span><span data-id="tee" data-auto-animate-delay="0.2" style="display-inline-block; font-size: 0px">xecution</span>
-<span data-id="e2" data-auto-animate-delay="0.2" style="display-inline-block; color: #224099; font-size: 120px;">E</span><span data-id="tee" data-auto-animate-delay="0.3" style="display-inline-block; font-size: 0px">nvironments</span>
+<span data-id="e2" data-auto-animate-delay="0.2" style="display-inline-block; color: #224099; font-size: 120px;">E</span><span data-id="tee" data-auto-animate-delay="0.3" style="display-inline-block; font-size: 0px">nvironment</span>
 
 Note:
 
@@ -144,18 +144,14 @@ vvv
 
 <span data-id="t">T</span><span data-id="tee">rusted</span>
 <span data-id="e">E</span><span data-id="tee">xecution</span>
-<span data-id="e2">E</span><span data-id="tee">nvironments</span>
+<span data-id="e2">E</span><span data-id="tee">nvironment</span>
 
 Note:
-Trusted Execution Environments
+Trusted Execution Environment
 
 vvv
 
 ## Standardization
-
-GlobalPlatform
-
-Confidential Computing Consortium
 
 Note:
 GlobalPlatform is an organization which created some standards wrt TEEs.
@@ -163,11 +159,19 @@ That means APIs etc.
 
 vvv
 
+<!-- .slide: data-background-iframe="https://globalplatform.org/" -->
+
+vvv
+
+<!-- .slide: data-background-iframe="https://confidentialcomputing.io/" -->
+
+vvv
+
 > A TEE consists of an isolated environment in which Trusted Applications can execute without the interference of the (untrusted) OS.
 
 vvv
 
-## So what's up?
+## What's missing?
 
 vvv
 
@@ -213,10 +217,6 @@ He wants some kind of inspection report. And that is what attestation entails. W
 
 vvv
 
-# Attestation Terminology <!-- .element: class="r-fit-text" -->
-
-vvv
-
 ## RATS
 
 <img height="300" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FvURhQy2Sk18%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=1fca7ee512d7e896bb1582511d9dea8b8bb293065b0ab5356dc67f1628839e99&ipo=images" />
@@ -227,19 +227,44 @@ vvv
 
 vvv
 
-Attester -> Me
+<!-- .slide: data-auto-animate -->
 
-Claim -> Information about the process
+#### Terminology
 
-Evidence -> The health inspection report
+<span class="fragment fade-in-then-semi-out" data-fragment-index="1" data-id="attester">Attester -></span> <span data-id="me" class="fragment fade-in-then-semi-out" data-fragment-index="1">Me</span><span data-id="ta" style="font-size: 0;">TA</span>
 
-Verifier -> The health inspector
+<span class="fragment fade-in-then-semi-out" data-fragment-index="2" data-id="claim">Claim -></span> <span data-id="restaurant" class="fragment fade-in-then-semi-out" data-fragment-index="2">Information about my restaurant</span><span data-id="info" style="font-size: 0;">Information about TA and device</span>
 
-Relying Party -> Mark
+<span class="fragment fade-in-then-semi-out" data-fragment-index="3" data-id="evidence">Evidence -></span> <span data-id="health-report" class="fragment fade-in-then-semi-out" data-fragment-index="3">The health inspection report</span><span data-id="claims" style="font-size: 0;">Set of claims</span>
+
+<span class="fragment fade-in-then-semi-out" data-fragment-index="4" data-id="verifier">Verifier -></span> <span data-id="health-inspector" class="fragment fade-in-then-semi-out" data-fragment-index="4">The health inspector</span><span data-id="manufacturer" style="font-size: 0;">Device Manufacturer</span>
+
+<span class="fragment fade-in-then-semi-out" data-fragment-index="5" data-id="rp">Relying Party -></span> <span data-id="mark" class="fragment fade-in-then-semi-out" data-fragment-index="5">Mark</span> <span data-id="software-vendor" style="font-size: 0;">Software Vendor of the TA</span>
 
 vvv
 
-Insert image about the setups that are possible
+<!-- .slide: data-auto-animate -->
+
+#### Terminology
+
+<span data-id="attester">Attester -></span> <span data-d="me" style="font-size: 0;">Me</span><span data-id="ta">TA</span>
+
+<span data-id="claim">Claim -></span> <span data-id="restaurant" style="font-size: 0;" >Information about my restaurant</span><span data-id="info">Information about TA and device</span>
+
+<span data-id="evidence">Evidence -></span> <span data-id="health-report" style="font-size: 0;" >The health inspection report</span><span data-id="claims">Set of claims</span>
+
+<span data-id="verifier">Verifier -></span> <span data-id="health-inspector" style="font-size: 0;" >The health inspector</span><span data-id="manufacturer">Device Manufacturer</span>
+
+<span data-id="rp">Relying Party -></span> <span data-id="mark" style="font-size: 0;" >Mark</span><span data-id="software-vendor">Software Vendor of the TA</span>
+
+vvv
+
+### Passport Model <!-- .element: style="float: left; width: 50%;" -->
+
+
+### Background Check Model <!-- .element: style="float: right; width: 50%;" -->
+
+vvv
 
 How to achieve this by sharing the least amount of information?
 
@@ -249,7 +274,41 @@ How to achieve this by sharing the least amount of information?
 
 vvv
 
-Insert merkle tree image
+<div class="r-stack" height="500">
+<img class="fragment fade-in-out" src="https://c8.alamy.com/comp/D5AYH7/german-chancellor-angela-merkel-waters-a-tree-inastana-kazakhstan-D5AYH7.jpg" />
+<img class="fragment fade-in-out" src="https://media.gettyimages.com/photos/august-2018-armenia-yerevan-german-chancellor-angela-merkel-plants-a-picture-id1022382344?s=594x594" />
+<img class="fragment fade-in-out" src="https://seebitcoin.com/wp-content/uploads/2016/07/merkeltree.jpg" />
+<img class="fragment fade-in-out" height="500" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.gettyimages.com%2Fphotos%2Fgerman-chancellor-angela-merkel-poses-in-front-of-a-christmas-tree-at-picture-id988402718&f=1&nofb=1&ipt=17d8309f791f567d71ad7149dcd87e4cff297b6647aabeea8841eac2803d2664&ipo=images" />
+<img class="fragment fade-in-out" src="https://media.gettyimages.com/photos/german-chancellor-angela-merkel-walks-past-a-christmas-tree-with-picture-id459989886?s=594x594" />
+<img class="fragment fade-in-out" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.reviewjournal.com%2Fwp-content%2Fuploads%2F2019%2F09%2F12760813_web1_911treeB.jpg%3Fcrop%3D1&f=1&nofb=1&ipt=6d7d95ff59259731bfd1706145ce589934210f983d9b8c7d4ce4ed2450b10359&ipo=images" />
+<img class="fragment fade-in-out" src="https://media.gettyimages.com/photos/german-chancellor-angela-merkel-stands-in-front-of-the-newly-erected-picture-id625319886" />
+<img class="fragment fade-in-out" src="https://external-preview.redd.it/ji6SZuRHCvlj4HySdLFlVgjZld2Z86AY44MkiCl0ST8.jpg?auto=webp&s=1af004174834f48ddae2f85a56be2036279c9307" />
+<img class="fragment fade-in-out" src="https://www.telegraph.co.uk/multimedia/archive/00685/g8-tree-planting_685783n.jpg" />
+</div>
+
+vvv
+
+<img class="r-stretch" src="https://kjoo.be/wp-content/uploads/2022/08/1658729781226-697x1024.jpg" />
+
+vvv
+
+<img class="r-stretch" src="./dist/img/merkle-tree.png" />
+
+vvv
+
+<!-- .slide: data-auto-animate -->
+### Merkle Proof
+
+vvv
+
+<!-- .slide: data-auto-animate -->
+### Merkle Proof
+
+Given the Root ➡️ prove $A$
+
+I only need $H_B$ and $H_{CD}$
+
+<img class="r-stretch" src="./dist/img/merkle-tree-proof.png" />
 
 vvv
 
@@ -281,7 +340,15 @@ vvv
 
 ## Diffie Hellman
 
-<img height="300" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VLlW7oTGbDqr_SjBBnSw4AHaFH%26pid%3DApi&f=1&ipt=05b2bda7227bb5a33d845fb42925caa24b294de66d35912dd65ae5bc1c79c18f&ipo=images" />
+<img height="300" data-id="test" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VLlW7oTGbDqr_SjBBnSw4AHaFH%26pid%3DApi&f=1&ipt=05b2bda7227bb5a33d845fb42925caa24b294de66d35912dd65ae5bc1c79c18f&ipo=images" />
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-id="dh" -->
+
+## Diffie Hellman
+
+<img height="300" data-id="testo" style="transform: scaleX(-1);" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VLlW7oTGbDqr_SjBBnSw4AHaFH%26pid%3DApi&f=1&ipt=05b2bda7227bb5a33d845fb42925caa24b294de66d35912dd65ae5bc1c79c18f&ipo=images" />
 
 vvv
 
