@@ -40,30 +40,19 @@ vvv
 
 ---
 
-
-## Cutting Potatoes
-<img class="r-stretch" src="https://fromscratchfast.com/wp-content/uploads/2020/06/Baked-French-Fries-Recipe-2.jpg" />
-
-## ⬇️
+<!-- .slide: data-auto-animate -->
 
 ## Compartmentalization
 
+<img class="r-stretch" src="https://fromscratchfast.com/wp-content/uploads/2020/06/Baked-French-Fries-Recipe-2.jpg" />
+
 vvv
-
-##
-
-<!-- .slide: data-background-iframe="" -->
-
-## Security is a hot topic
-
-Note:
-And I don't say that just because I chose the security master
-
----
 
 <!-- .slide: data-auto-animate -->
 
 ## Compartmentalization
+
+Split up your code
 
 Note:
 Just splitting up is not enough. We need something more
@@ -73,9 +62,7 @@ vvv
 
 <!-- .slide: data-auto-animate -->
 
-## Compartmentalization
-
-#### <span data-id="towards">Can we improve </span><span data-id="hardware-based" style="font-size: 0;">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark">?</span>
+#### <span data-id="towards">How to get better </span><span data-id="hardware-based" style="font-size: 0;">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark">?</span>
 
 vvv
 
@@ -94,8 +81,8 @@ vvv
 <h3 class="fragment fade-in-then-semi-out" data-fragment-index="2">RISC-V MultiZone</h3>
 
 <div class="r-stack">
-<img src="./dist/img/sgx.jpg" class="fragment fade-in-then-out" height="200" data-fragment-index="1" />
-<img src="./dist/img/multizone.jpg" class="fragment fade-in-then-out" height="200" data-fragment-index="2" />
+<img src="./dist/img/sgx.png" class="fragment fade-in-then-out" height="200" data-fragment-index="1" />
+<img src="./dist/img/multizone.png" class="fragment fade-in-then-out" height="200" data-fragment-index="2" />
 <img src="./dist/img/Arm-TrustZone-Logo-2337384223.png" class="fragment fade-in-then-out" height="200" data-fragment-index="3" />
 </div>
 
@@ -168,6 +155,14 @@ vvv
 vvv
 
 > A TEE consists of an isolated environment in which Trusted Applications can execute without the interference of the (untrusted) OS.
+
+vvv
+
+### TrustZone is not a TEE
+
+vvv
+
+<!-- .slide: data-background-iframe="https://www.trustedfirmware.org/projects/op-tee/" -->
 
 vvv
 
