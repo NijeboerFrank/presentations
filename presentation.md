@@ -95,8 +95,6 @@ vvv
 
 ## TrustZone
 
-Old Technology 👴🏼 <!-- .element: class="fragment fade-in"-->
-
 Normal World 🖥️  <!-- .element: class="fragment fade-in"-->
 
 Secure World 🔒 <!-- .element: class="fragment fade-in"-->
@@ -174,7 +172,13 @@ vvv
 
 vvv
 
-<img class="r-stretch" src="dist/img/trustzone_layout.png"/>
+<!-- .slide: data-auto-animate data-auto-animate-unmatched="false" -->
+
+<img height="400" src="dist/img/trustzone-layout.rrusted Applicationpng"/>
+
+vvv
+<!-- .slide: data-auto-animate data-auto-animate-unmatched="false" -->
+<img height="400" src="dist/img/what-happens-here.png"/>
 
 ---
 
@@ -242,7 +246,7 @@ vvv
 
 #### Terminology
 
-<span data-id="attester">Attester -></span> <span data-d="me" style="font-size: 0;">Me</span><span data-id="ta">TA</span>
+<span data-id="attester">Attester -></span> <span data-d="me" style="font-size: 0;">Me</span><span data-id="ta">Trusted Application</span>
 
 <span data-id="claim">Claim -></span> <span data-id="restaurant" style="font-size: 0;" >Information about my restaurant</span><span data-id="info">Information about TA and device</span>
 
@@ -254,10 +258,15 @@ vvv
 
 vvv
 
-### Passport Model <!-- .element: style="float: left; width: 50%;" -->
+<div style="float: left; width: 50%;">
+<h3>Passport<br> Model</h3>
+<img src="https://learn.microsoft.com/en-us/azure/confidential-computing/media/attestation-solutions/passport-model-computing.png" />
+</div>
 
-
-### Background Check Model <!-- .element: style="float: right; width: 50%;" -->
+<div style="float: left; width: 50%;">
+<h3>Background Check Model</h3>
+<img src="https://learn.microsoft.com/en-us/azure/confidential-computing/media/attestation-solutions/background-check-model-computing.png" />
+</div>
 
 vvv
 
