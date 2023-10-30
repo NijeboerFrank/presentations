@@ -40,6 +40,19 @@ vvv
 
 ---
 
+<!-- .slide: data-background-iframe="https://www.cybertalk.org/2023/01/19/top-10-cyber-security-threats-in-2023/" data-background-interactive -->
+
+vvv
+
+<!-- .slide: data-background-iframe="https://techhq.com/2021/08/heres-how-hackers-exploit-iot-device-vulnerabilities-to-invade-hardware/" -->
+
+vvv
+
+<!-- .slide: data-background-iframe="https://www.helpnetsecurity.com/2023/10/16/iot-security-strategy/" -->
+
+vvv
+
+
 <!-- .slide: data-auto-animate -->
 
 ## Compartmentalization
@@ -172,24 +185,6 @@ vvv
 
 vvv
 
-<!-- .slide: data-auto-animate data-auto-animate-unmatched="false" -->
-
-<img height="400" src="dist/img/trustzone-layout.rrusted Applicationpng"/>
-
-vvv
-<!-- .slide: data-auto-animate data-auto-animate-unmatched="false" -->
-<img height="400" src="dist/img/what-happens-here.png"/>
-
----
-
-# Attestation
-
-vvv
-
-<img class="r-stretch" src="./dist/img/max-patat.png" />
-
-vvv
-
 ### My restaurant
 
 <img class="r-stretch" src="./dist/img/kwalitaria.jpg" />
@@ -209,10 +204,38 @@ it should be done.
 
 vvv
 
-<img class="r-stretch" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficons-for-free.com%2Ficonfiles%2Fpng%2F512%2Finspection-131964752898110361.png&f=1&nofb=1&ipt=df7c9e017bab4e6d03128780319465a4023e859ab060077b5fca0c5213c991f9&ipo=images" />
+## How can we convince Mark?
+
+We need to show him some proof
 
 Note:
 He wants some kind of inspection report. And that is what attestation entails. With Attestation one party can prove to another that it is running trusted software that has not been subject to any tampering.
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-unmatched="false" -->
+<img height="400" src="dist/img/what-happens-here.png"/>
+
+---
+
+<!-- .slide: data-auto-animate -->
+
+# Attestation
+
+vvv
+
+<!-- .slide: data-auto-animate -->
+
+# Attestation
+Prove to another<span data-id="1" style="font-size: 0;">remote</span> party that you run trusted software
+
+vvv
+
+<!-- .slide: data-auto-animate -->
+
+## Remote
+# Attestation
+Prove to another <span data-id="1">remote</span> party that you run trusted software
 
 vvv
 
@@ -228,7 +251,7 @@ vvv
 
 <!-- .slide: data-auto-animate -->
 
-#### Terminology
+#### Terminology (<span data-id="restaurant">restaurant</span><span data-id="TrustZone" style="font-size: 0pt">TrustZone</span>)
 
 <span class="fragment fade-in-then-semi-out" data-fragment-index="1" data-id="attester">Attester -></span> <span data-id="me" class="fragment fade-in-then-semi-out" data-fragment-index="1">Me</span><span data-id="ta" style="font-size: 0;">TA</span>
 
@@ -244,7 +267,7 @@ vvv
 
 <!-- .slide: data-auto-animate -->
 
-#### Terminology
+#### Terminology (<span data-id="restaurant" style="font-size: 0;">restaurant</span><span data-id="TrustZone">TrustZone</span>)
 
 <span data-id="attester">Attester -></span> <span data-d="me" style="font-size: 0;">Me</span><span data-id="ta">Trusted Application</span>
 
@@ -274,12 +297,56 @@ How to achieve this by sharing the least amount of information?
 
 ---
 
+## My Literature Research
+
+vvv
+
+## Why?
+
+Note:
+I wanted to know if there is already something out there that is usable
+If that is not really the case, learn from the existing research and see how they did it
+
+vvv
+
+## How?
+
+vvv
+
+<!-- .slide: data-background-iframe="./dist/thesis.pdf#page=13" -->
+
+vvv
+
+Insert image about End-to-End Security for distributed event driven enclave
+
+vvv
+
+But can we make one ourselves?
+
+vvv
+
+<div style="float: left; width: 50%;">
+<h3>Passport<br> Model</h3>
+<img src="https://learn.microsoft.com/en-us/azure/confidential-computing/media/attestation-solutions/passport-model-computing.png" />
+</div>
+
+<div style="float: left; width: 50%;">
+<h3>Background Check Model</h3>
+<img src="https://learn.microsoft.com/en-us/azure/confidential-computing/media/attestation-solutions/background-check-model-computing.png" />
+</div>
+
+---
+
+# Builing Blocks
+
+vvv
+
 ## Merkle Trees
 
 vvv
 
 <div class="r-stack" height="500">
-<img class="fragment fade-in-out" src="https://c8.alamy.com/comp/D5AYH7/german-chancellor-angela-merkel-waters-a-tree-inastana-kazakhstan-D5AYH7.jpg" />
+<img src="https://c8.alamy.com/comp/D5AYH7/german-chancellor-angela-merkel-waters-a-tree-inastana-kazakhstan-D5AYH7.jpg" />
 <img class="fragment fade-in-out" src="https://media.gettyimages.com/photos/august-2018-armenia-yerevan-german-chancellor-angela-merkel-plants-a-picture-id1022382344?s=594x594" />
 <img class="fragment fade-in-out" src="https://seebitcoin.com/wp-content/uploads/2016/07/merkeltree.jpg" />
 <img class="fragment fade-in-out" height="500" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.gettyimages.com%2Fphotos%2Fgerman-chancellor-angela-merkel-poses-in-front-of-a-christmas-tree-at-picture-id988402718&f=1&nofb=1&ipt=17d8309f791f567d71ad7149dcd87e4cff297b6647aabeea8841eac2803d2664&ipo=images" />
@@ -293,6 +360,20 @@ vvv
 vvv
 
 <img class="r-stretch" src="https://kjoo.be/wp-content/uploads/2022/08/1658729781226-697x1024.jpg" />
+
+vvv
+
+##### From the one who brought you cryptographic hash functions
+
+$H(x) \rightarrow y$
+
+And no function $F$ such that
+
+$F(y) \rightarrow x$
+
+Note:
+
+You might know them as SHA-2/3 or BLAKE2 etc.
 
 vvv
 
@@ -316,9 +397,13 @@ I only need $H_B$ and $H_{CD}$
 
 vvv
 
-How should that work for our protocol?
+Claims are the leaves
 
-Claims as leaves. Merkle Tree as evidence.
+Merkle Tree as evidence.
+
+vvv
+
+Insert image here
 
 vvv
 
@@ -336,7 +421,7 @@ vvv
 
 A framework for creating your handshake protocol
 
-Used by wireguard, whatsapp, signal...
+Used by Wireguard, WhatsApp, Signal...
 
 vvv
 
@@ -344,15 +429,15 @@ vvv
 
 ## Diffie Hellman
 
-<img height="300" data-id="test" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VLlW7oTGbDqr_SjBBnSw4AHaFH%26pid%3DApi&f=1&ipt=05b2bda7227bb5a33d845fb42925caa24b294de66d35912dd65ae5bc1c79c18f&ipo=images" />
+<img height="300" style="transform: scaleX(-1);" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VLlW7oTGbDqr_SjBBnSw4AHaFH%26pid%3DApi&f=1&ipt=05b2bda7227bb5a33d845fb42925caa24b294de66d35912dd65ae5bc1c79c18f&ipo=images" />
 
 vvv
 
-<!-- .slide: data-auto-animate data-auto-animate-id="dh" -->
+We've already seen them today!
 
-## Diffie Hellman
+vvv
 
-<img height="300" data-id="testo" style="transform: scaleX(-1);" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VLlW7oTGbDqr_SjBBnSw4AHaFH%26pid%3DApi&f=1&ipt=05b2bda7227bb5a33d845fb42925caa24b294de66d35912dd65ae5bc1c79c18f&ipo=images" />
+<img class="r-stretch" src="https://kjoo.be/wp-content/uploads/2022/08/1658729781226-697x1024.jpg" />
 
 vvv
 
@@ -372,7 +457,15 @@ $(g^a)^b = (g^b)^a = K$ <!-- .element: class="fragment fade-in"-->
 
 vvv
 
-Back to noise
+### Other Building Blocks
+
+Hash Function (**SHA-256**)
+
+Symmetric Encryption Function (**AES-256**)
+
+vvv
+
+Back to NOISE
 
 We use the XK variant
 
@@ -381,13 +474,46 @@ Explain the XK variant
 
 vvv
 
-Insert total image for the handshake here.
-
----
-
-### So the final version for PATAT is
+## What does that mean?
 
 vvv
+
+<div style="float: left; width: 50%;">
+<h3>Ephemeral</h3>
+<p>Generated on the fly</p>
+</div>
+
+<div style="float: left; width: 50%;">
+<h3>Static</h3>
+<p>Used more often</p>
+</div>
+
+vvv
+
+Insert XK image
+
+vvv
+
+Insert total image for the handshake here.
+
+vvv
+
+Forward secrecy
+
+vvv
+
+### How can you be so sure?
+
+vvv
+
+<!-- .slide: data-background-iframe="https://tamarin-prover.github.io/" -->
+
+
+vvv
+
+Maybe insert image here?
+
+---
 
 Insert total PATAT image here
 
