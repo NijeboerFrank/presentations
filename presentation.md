@@ -10,6 +10,11 @@ Frank Nijeboer
 <span data-id="a">A</span><span data-id="protocol">rm</span>
 <span data-id="t">T</span><span data-id="protocol">rustZone</span>
 
+Note:
+- My name
+- I'll be taking you on a trip through the Arm TrustZone and most notably Attestation
+- Because I'm working on a Protocol
+
 vvv
 
 <!-- .slide: data-auto-animate data-auto-animate-id="patat" data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)" data-auto-animate-duration="1.2" -->
@@ -38,7 +43,17 @@ vvv
 2. Fry them <!-- .element: class="fragment fade-in"-->
 3. Serve them <!-- .element: class="fragment fade-in"-->
 
+Note:
+And I hear you thinking, nice joke. But, we will come back to patat shortly.
+
 ---
+
+# Cyber Security
+
+Note:
+The world is burning if we look at the news sometimes
+
+vvv
 
 <!-- .slide: data-background-iframe="https://www.cybertalk.org/2023/01/19/top-10-cyber-security-threats-in-2023/" data-background-interactive -->
 
@@ -50,14 +65,8 @@ vvv
 
 <!-- .slide: data-background-iframe="https://www.helpnetsecurity.com/2023/10/16/iot-security-strategy/" -->
 
-vvv
-
-
-<!-- .slide: data-auto-animate -->
-
-## Compartmentalization
-
-<img class="r-stretch" src="https://fromscratchfast.com/wp-content/uploads/2020/06/Baked-French-Fries-Recipe-2.jpg" />
+Note:
+So what can we do to make software more secure?
 
 vvv
 
@@ -67,21 +76,31 @@ vvv
 
 Split up your code
 
+vvv
+
+<!-- .slide: data-auto-animate -->
+
+## Compartmentalization
+
+<img class="r-stretch" src="https://fromscratchfast.com/wp-content/uploads/2020/06/Baked-French-Fries-Recipe-2.jpg" />
+
 Note:
-Just splitting up is not enough. We need something more
+- One large potato -> everything
+- This piece handle private information
+- Just splitting up is not secure. We need something more
 
 vvv
 
 
 <!-- .slide: data-auto-animate -->
 
-#### <span data-id="towards">How to get better </span><span data-id="hardware-based" style="font-size: 0;">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark">?</span>
+### <span data-id="towards">How to get better </span><span data-id="hardware-based" style="font-size: 0;">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark">?</span>
 
 vvv
 
 <!-- .slide: data-auto-animate -->
 
-#### <span data-id="towards" style="font-size: 0;">Can we improve </span><span data-id="hardware-based">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark" style="font-size: 0;">?</span>
+### <span data-id="towards" style="font-size: 0;">Can we improve </span><span data-id="hardware-based">Hardware-based </span><span data-id="security">security</span><span data-id="question-mark" style="font-size: 0;">?</span>
 
 Note:
 We can try with hardware based security
@@ -100,7 +119,8 @@ vvv
 </div>
 
 Note:
-Most hardware designers nowadays have some form of it. These are some examples. In our case, we are, obviously interested in TrustZone.
+- Most hardware designers nowadays have some form of it.
+- These are some examples. In our case, we are, obviously interested in TrustZone.
 
 vvv
 
@@ -108,23 +128,37 @@ vvv
 
 ## TrustZone
 
+Since 2004
+
 Normal World 🖥️  <!-- .element: class="fragment fade-in"-->
 
 Secure World 🔒 <!-- .element: class="fragment fade-in"-->
+
+Note:
+- Centers around the idea that there are two domains in the computer that must be isolated from each other
+
 
 vvv
 
 <!-- .slide: data-auto-animate -->
 
-<div class="container">
-<div class="col">
+<div style="float: left; width: 50%;">
 <img src="dist/img/trustzone_layout.png"/>
 </div>
 
-<div class="col">
+<div style="float: left; width: 50%;">
 <h2>TrustZone</h2>
+<p class="fragment fade-in">NS Bit</p>
+<p class="fragment fade-in">Exception Levels</p>
+<p class="fragment fade-in">Secure Monitor Call</p>
 </div>
 </div>
+
+Note:
+- On the left, normal, right secure world
+- Only one at a time
+- As you may know, Arm systems use Exception Levels. So higher has control over lower
+- But, now we want to have part of our app "invisible" to the Rich OS
 
 ---
 
@@ -135,6 +169,7 @@ vvv
 <span data-id="e2" data-auto-animate-delay="0.2" style="display-inline-block; color: #224099; font-size: 120px;">E</span><span data-id="tee" data-auto-animate-delay="0.3" style="display-inline-block; font-size: 0px">nvironment</span>
 
 Note:
+- TrustZone enables this thing called a TEE
 
 vvv
 
@@ -152,36 +187,62 @@ vvv
 ## Standardization
 
 Note:
-GlobalPlatform is an organization which created some standards wrt TEEs.
-That means APIs etc.
+- Over time, TEEs underwent some standardization efforts to make the concept more the same for different hardware manufacturers
+- These efforts are guided by
 
 vvv
 
 <!-- .slide: data-background-iframe="https://globalplatform.org/" -->
 
+Note:
+- first to come up with the term TEE
+- also provide an API that TEEs have to comply with
+
 vvv
 
 <!-- .slide: data-background-iframe="https://confidentialcomputing.io/" -->
+
+Note:
+And there is also the CCC
 
 vvv
 
 > A TEE consists of an isolated environment in which Trusted Applications can execute without the interference of the (untrusted) OS.
 
+Note:
+- All these efforts have at least led to a definition of a TEE
+
 vvv
 
 ### TrustZone is not a TEE
+Note:
+- Enables TEE
 
 vvv
 
 <!-- .slide: data-background-iframe="https://www.trustedfirmware.org/projects/op-tee/" -->
 
+Note:
+- Most well-known TEE for TrustZone
+- Implements GP API
+- And backed by Linaro
+- Readable documentation
+
 vvv
 
 ## What's missing?
 
+Note:
+- So we can spawn TEEs which are secure from their OS.
+- What can be missing?
+
 vvv
 
 <img height="400" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgflip.com%2F4qv85n.jpg&f=1&nofb=1&ipt=8aca72c4a3bc2c82cdef8b5f91b0144289ec34992429ed3c340a2ecb22deeec1&ipo=images" >
+
+Note:
+- The problem is that we now cannot see what happens inside the application anymore
+- To see why that is a problem, let's go back to our patat analogy
 
 vvv
 
@@ -191,7 +252,7 @@ vvv
 
 Note:
 
-And Mark comes to visit me. I want to give him my fries in exchange for his money. However, he doesn't trust me because he can't see me making the fries.
+And Mark comes to visit me. I want to give him my fries in exchange for his money. However, he is paranoid and doesn't trust me because he can't see me making the fries.
 
 vvv
 
@@ -209,12 +270,17 @@ vvv
 We need to show him some proof
 
 Note:
-He wants some kind of inspection report. And that is what attestation entails. With Attestation one party can prove to another that it is running trusted software that has not been subject to any tampering.
+- Preferably without Mark watching my every move in the kitchen
+- Health inspection report
 
 vvv
 
 <!-- .slide: data-auto-animate data-auto-animate-unmatched="false" -->
 <img height="400" src="dist/img/what-happens-here.png"/>
+
+Note:
+- If we translate that to our computer
+- We want to know what happens here without sacrificing the benefits
 
 ---
 
@@ -229,6 +295,9 @@ vvv
 # Attestation
 Prove to another<span data-id="1" style="font-size: 0;">remote</span> party that you run trusted software
 
+Note:
+- There is also Remote attestation
+
 vvv
 
 <!-- .slide: data-auto-animate -->
@@ -236,6 +305,10 @@ vvv
 ## Remote
 # Attestation
 Prove to another <span data-id="1">remote</span> party that you run trusted software
+
+vvv
+
+### We love standards
 
 vvv
 
@@ -262,6 +335,9 @@ vvv
 <span class="fragment fade-in-then-semi-out" data-fragment-index="4" data-id="verifier">Verifier -></span> <span data-id="health-inspector" class="fragment fade-in-then-semi-out" data-fragment-index="4">The health inspector</span><span data-id="manufacturer" style="font-size: 0;">Device Manufacturer</span>
 
 <span class="fragment fade-in-then-semi-out" data-fragment-index="5" data-id="rp">Relying Party -></span> <span data-id="mark" class="fragment fade-in-then-semi-out" data-fragment-index="5">Mark</span> <span data-id="software-vendor" style="font-size: 0;">Software Vendor of the TA</span>
+
+Note:
+- And with these terms, we have some models for attestation
 
 vvv
 
@@ -291,9 +367,6 @@ vvv
 <img src="https://learn.microsoft.com/en-us/azure/confidential-computing/media/attestation-solutions/background-check-model-computing.png" />
 </div>
 
-vvv
-
-How to achieve this by sharing the least amount of information?
 
 ---
 
@@ -304,12 +377,17 @@ vvv
 ## Why?
 
 Note:
-I wanted to know if there is already something out there that is usable
-If that is not really the case, learn from the existing research and see how they did it
+- I wanted to know if there is already something out there that is usable
+- If that is not really the case, learn from the existing research and see how they did it
 
 vvv
 
 ## How?
+
+Note:
+- To make my life easier
+- Came up with some features for attestation
+- To be able to compare
 
 vvv
 
@@ -317,7 +395,7 @@ vvv
 
 vvv
 
-Insert image about End-to-End Security for distributed event driven enclave
+<img src="./dist/img/winner.png" height="400" />
 
 vvv
 
@@ -335,9 +413,13 @@ vvv
 <img src="https://learn.microsoft.com/en-us/azure/confidential-computing/media/attestation-solutions/background-check-model-computing.png" />
 </div>
 
+vvv
+
+How to achieve this by sharing the least amount of information?
+
 ---
 
-# Builing Blocks
+# Building Blocks
 
 vvv
 
@@ -397,31 +479,50 @@ I only need $H_B$ and $H_{CD}$
 
 vvv
 
-Claims are the leaves
+*Claims* are the leaves
 
-Merkle Tree as evidence.
-
-vvv
-
-Insert image here
+Merkle Tree Root as *Evidence*.
 
 vvv
 
-How to get the Merkle Tree accross?
+<img class="r-stretch" src="./dist/img/evidence-in-tree.png" />
+
+vvv
+
+How to get the Merkle Tree across?
+
+Note:
+- We now have the way in which we want to calculate our data. How do we get this safely to the relying party and verifier?
 
 ---
 
 <img height="300" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mememaker.net%2Fstatic%2Fimages%2Fmemes%2F4471846.jpg&f=1&nofb=1&ipt=a34258f40ab9420c219dc32619a7b5d281b07a6d8d0817584baf1c924bc388b3&ipo=images" />
 
+Note:
+- Since rolling your own crypto is always a bad idea
+- We use noise
+
 vvv
 
 <!-- .slide: data-background-iframe="http://noiseprotocol.org/" -->
+
+Note:
+- a framework for creating your own cryptographic protocol
+- with some nice benefits and flexibility
+- You use their building blocks to create your own protocol
 
 vvv
 
 A framework for creating your handshake protocol
 
 Used by Wireguard, WhatsApp, Signal...
+
+Note:
+- Not something random I found on the internet.
+
+vvv
+
+### What is it made of?
 
 vvv
 
@@ -439,6 +540,9 @@ vvv
 
 <img class="r-stretch" src="https://kjoo.be/wp-content/uploads/2022/08/1658729781226-697x1024.jpg" />
 
+Note:
+- Isn't it nice to know that these crypto geniuses knew each other?
+
 vvv
 
 <!-- .slide: data-auto-animate data-auto-animate-id="dh" -->
@@ -454,6 +558,9 @@ I send $g^a$ <!-- .element: class="fragment fade-in"-->
 You send $g^b$ <!-- .element: class="fragment fade-in"-->
 
 $(g^a)^b = (g^b)^a = K$ <!-- .element: class="fragment fade-in"-->
+
+Note:
+- We are now past this, but the idea is still the same
 
 vvv
 
@@ -478,27 +585,35 @@ vvv
 
 vvv
 
+### Key Types
+
 <div style="float: left; width: 50%;">
-<h3>Ephemeral</h3>
+<h4>Ephemeral</h4>
 <p>Generated on the fly</p>
 </div>
 
 <div style="float: left; width: 50%;">
-<h3>Static</h3>
+<h4>Static</h4>
 <p>Used more often</p>
 </div>
 
 vvv
 
-Insert XK image
+<img class="r-stretch" src="./dist/img/init-resp.png" />
 
 vvv
 
-Insert total image for the handshake here.
+<img class="r-stretch" src="./dist/img/handshake-total.png" />
 
 vvv
 
-Forward secrecy
+Authentication
+
+Secrecy
+
+Forward Secrecy
+
+Secure Channel
 
 vvv
 
@@ -508,28 +623,61 @@ vvv
 
 <!-- .slide: data-background-iframe="https://tamarin-prover.github.io/" -->
 
+Note:
+- I've formally proven everything in the Tamarin prover
+- A way to check if claims about your crypto hold
+- Its own language
 
 vvv
 
-Maybe insert image here?
+<!-- .slide: data-background-iframe="http://localhost:3001" -->
 
 ---
 
-Insert total PATAT image here
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.0" -->
+
+<img class="r-stretch" src="./dist/img/full-1.png" />
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.0" -->
+
+<img class="r-stretch" src="./dist/img/full-2.png" />
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.0" -->
+
+<img class="r-stretch" src="./dist/img/full-3.png" />
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.0" -->
+
+<img class="r-stretch" src="./dist/img/full-4.png" />
+
+vvv
+
+<!-- .slide: data-auto-animate data-auto-animate-duration="0.0" -->
+
+<img class="r-stretch" src="./dist/img/full-5.png" />
 
 vvv
 
 ## Implementation
 
-Rust
+Rust PoC
 
 Library
 
-Application
-
 OP-TEE in QEMU
 
+WIP
+
 ---
+
+
+<img style="float: left; width: 50%;" class="r-stretch" src="./dist/img/max-patat.png" />
 
 ## Summary
 
